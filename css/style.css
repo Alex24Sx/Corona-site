@@ -45,7 +45,7 @@ min-height: 100%;
 }
 main{
 	flex: 1 1 auto;
-}
+	}
  [class*="__container"]{
 	max-width: 1057px;
 	margin: 0px auto;
