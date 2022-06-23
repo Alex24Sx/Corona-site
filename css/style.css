@@ -255,16 +255,7 @@ background-color: #000;
 }
 /*Создание бургера*/
 /*Основная часть*/
-.get-started {
-	background-color: #FAFBFD;
-	padding: 0px 0px 0px 0px;
-}
-.get-started__container {
-}
-.get-started__content {
-}
-.get-started__block-text {
-}
+/* Текст*/
 .block-text {
 }
 .block-text__title {
@@ -275,12 +266,31 @@ background-color: #000;
 }
 .block-text__button {
 }
-.button {
+/* Текст*/
+/* Картинки и кнопка видео*/
+.get-started {
+	background-color: #FAFBFD;
+	padding: 150px 0px 50px 0px;
+}
+.get-started__container {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.get-started__content {
+	flex: 0 1 48%;
+	padding: 0px 0px 0px 20px;
+}
+.get-started__block-text {
+	max-width: 410px;
 }
 .get-started__video {
+	flex: 1 1 100%;
+	margin: 0px 0px 0px 20px;
 }
 .video-get-started {
-}
+display: inline-flex;
+	}
 .video-get-started__icon {
 }
 .video-get-started__body {
@@ -289,3 +299,10 @@ background-color: #000;
 }
 .video-get-started__text {
 }
+.get-started__image {
+	flex: 0 1 52%;
+}
+.get-started__image img {
+	max-width: 100%;
+}
+/* Картинки и кнопка видео*/
