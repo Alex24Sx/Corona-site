@@ -259,10 +259,25 @@ background-color: #000;
 .block-text {
 }
 .block-text__title {
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 138.5% ;
+	color: #000;
 }
-.block-text__title__blue {
+.block-text__title:not(:last-child) {
+	margin: 0px 0px 12px 0px;
+}
+.block-text__title span {
+	color: #EC5863;
+}
+.block-text__title__blue span {
+	color: #4285F4;
 }
 .block-text__text {
+	font-size: 12px;
+}
+.block-text__text:not(:last-child) {
+	margin: 0px 0px 24px 0px;
 }
 .block-text__button {
 }
