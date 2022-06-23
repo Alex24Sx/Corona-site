@@ -12,8 +12,8 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
+		<header id="open" class="header">
+			<div id="close" class="header__container">
 				<a href="" class="header__logo"><img src="/img/logo.svg" alt="Логотип"> </a>
 				<nav class="header__menu menu">
 					<nav class="menu_body">
@@ -25,9 +25,10 @@
 						</ul>
 					</nav>
 				</nav>
-				<button type="button" class="menu_icon icon_menu"><span></span></button>
 				<div class="header__button">
 					<a href="" class="button button_blue">DOWNLOAD</a>
+					<a href="#open" class="icon_menu"><span></span></a>
+					<a href="#close" class="close_icon_menu"></a>
 				</div>
 			</div>
 		</header>

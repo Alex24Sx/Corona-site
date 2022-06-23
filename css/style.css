@@ -51,6 +51,7 @@ main{
 	margin: 0px auto;
 	padding: 0 15px;
 }
+/*Адаптив*/
 /*PC*/
 @media (max-width: 1087px) {
 	[class*="__container"]{
@@ -66,6 +67,11 @@ main{
 	[class*="__container"]{
 		max-width: none;}
 }
+/*Mobile small*/
+@media (max-width: 490.98px) {
+	[class*="__container"]{
+		max-width: none;}}
+/*Адаптив*/
 /*------------------------*/
 .header {
 	position: absolute;
@@ -79,10 +85,17 @@ main{
 	min-height: 114px;
 	align-items: center;
 }
+.header__logo {
+	position: relative;
+	z-index: 5;
+	/*показать лого*/
+}
 .header__menu {
 	flex: 1 1 auto;
 }
 .header__button {
+	position: relative;
+	z-index: 5;
 	flex:0 0 252px;
 	display: flex;
 	justify-content: flex-end;
@@ -111,6 +124,9 @@ main{
 	color: #000;
 	letter-spacing: 1px;
 }
+.menu__link:hover{
+	text-decoration: underline;
+}
 @media (max-width: 991.98px) {
 	.header__container{
 		min-height: 80px;
@@ -120,20 +136,52 @@ main{
 	.menu__item{
 		margin: 0px 30px 0px 0px;}
 }
+/*настройки меню*/
 @media (max-width: 767.98px) {
 	.menu_body{
 	 position: fixed;
 	 top: 0;
-	 left: 0;
+	 left:-100%;
 	 width: 100%;
 	 height: 100%;
+	 background-color: r#fff ;
+	 padding: 80px 15px 30px 15px;
+	 transition: left 0.3s ease 0s;
+	 overflow: auto;}
+	.header:target .menu_body{
+		left: 0;
 	}
+	.header:target .menu_body::before{
+		content: "";
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 80px;
+		width: 100%;
+		background-color: #fff;
+	}
+	.menu__list{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.menu__item{
+		margin: 0px 0px 25px 0px;}
+		.menu__item:last-child{
+			margin-bottom: 0;
+		}
+	.menu__link{
+		/*color: white;*/
+		font-size: 20px;
+	}
+			}
+@media (max-width: 479.98px) {
+	/*Cкрыть текст на лого за счет пикселей при масштабировании окна*/
+	.header__logo {
+		flex: 0 0 40px;
+		overflow: hidden;
 }
-.header__logo {
-	flex: 0 0 40px;
-	overflow: hidden;
 }
-
 /*------------------------*/
 .button {
 	display: inline-block;
@@ -159,11 +207,12 @@ main{
 	background-color: #4c75b8;
 }
 /*------------------------*/
+/*Создание бургера*/
 .icon_menu{
 	display: none;
 }
 @media (max-width: 767.98px) {
-	.icon_menu{
+	.icon_menu,.close_icon_menu{
 	display: flex;
 	position: relative;
 	flex: 0 0 30px;
@@ -182,3 +231,26 @@ main{
 height: 2px;
 background-color: #000;
 }
+.close_icon_menu{
+	display: none;
+}
+.close_icon_menu::before,
+.close_icon_menu::after{
+	content: "";
+	background-color: #000;
+	height: 2px;
+	transform-origin: 0 0;
+}
+.close_icon_menu::before{
+	transform: rotate(35deg);
+}
+	.close_icon_menu::after{
+	transform: rotate(-35deg);
+}
+.header:target .icon_menu{
+	display: none;
+}
+.header:target .close_icon_menu{
+	display: flex;
+}
+/*Создание бургера*/
