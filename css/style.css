@@ -257,6 +257,7 @@ background-color: #000;
 /*Основная часть*/
 .get-started {
 	background-color: #FAFBFD;
+	padding: 0px 0px 0px 0px;
 }
 .get-started__container {
 }
