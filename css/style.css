@@ -474,9 +474,11 @@ align-items: center;
 	.stay-safe__content{
 		margin: 0px 0px 30px 0px;
 	}
-	.media-stay-safe{
-		width: 290px;
-	}
+		}
+	@media (max-width: 479.98px){
+		.media-stay-safe{
+			width: 290px;
+		}
 	}
 
 	/*Адаптив 2 page*/
