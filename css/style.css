@@ -144,7 +144,7 @@ main{
 	 left:-100%;
 	 width: 100%;
 	 height: 100%;
-	 background-color: r#fff ;
+	 background-color: #fff ;
 	 padding: 80px 15px 30px 15px;
 	 transition: left 0.3s ease 0s;
 	 overflow: auto;}
@@ -257,7 +257,7 @@ background-color: #000;
 /*Основная часть*/
 /* Текст*/
 .block-text {
-}
+	}
 .block-text__title {
 	font-weight: 700;
 	font-size: 44px;
@@ -458,7 +458,7 @@ align-items: center;
 	/*Адаптив 2 page*/
 	@media (max-width: 991.98px){
 		.stay-safe{
-			padding: 40px 0px;
+			padding: 30px 0px;
 		}
 	}
 	@media (min-width: 991.98px){
@@ -483,3 +483,38 @@ align-items: center;
 
 	/*Адаптив 2 page*/
 	/* Вторая страница*/
+
+	/*3 Page*/
+	.experts {
+		background-color: #FAFBFD;
+		padding: 103px 0px 116px 0px;
+	}
+	.experts__container {
+	}
+	.experts__statistics {
+	}
+	.statistics-experts {
+		max-width: 655px;
+		margin: 0 auto;
+		background-color: #FFFFFF;
+		box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+		border-radius: 16px;
+	}
+	.statistics-experts__body {
+	}
+	.statistics-experts__decor {
+	}
+	.statistics-experts__decor1 {
+	}
+	.statistics-experts__decor2 {
+	}
+	.statistics-experts__decor3 {
+	}
+	.body-statistics-experts {
+	}
+	.body-statistics-experts__item {
+	}
+	.body-statistics-experts__value {
+	}
+	.body-statistics-experts__text {
+	}
