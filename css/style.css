@@ -495,13 +495,15 @@ align-items: center;
 	}
 	.statistics-experts {
 		max-width: 655px;
-		margin: 0 auto;
+		margin: 0px auto;
+		position: relative;
+	}
+	.statistics-experts__body {
 		background-color: #FFFFFF;
 		box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
 		border-radius: 16px;
 		position: relative;
-	}
-	.statistics-experts__body {
+		z-index: 2;
 	}
 	.statistics-experts__decor {
 		position: absolute;
@@ -513,9 +515,8 @@ align-items: center;
 		height: 65px;
 		border-radius: 16px;
 		transform: rotate(-30deg);
-		bottom: -31px;
-		left: -31px;
-		z-index: 2;
+		bottom: -21px;
+		left: -21px;
 	}
 	.statistics-experts__decor2 {
 	}
