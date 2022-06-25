@@ -499,12 +499,23 @@ align-items: center;
 		background-color: #FFFFFF;
 		box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
 		border-radius: 16px;
+		position: relative;
 	}
 	.statistics-experts__body {
 	}
 	.statistics-experts__decor {
-	}
+		position: absolute;
+		background-color: #EC5863;
+		border-radius: 30px;
+			}
 	.statistics-experts__decor1 {
+		width: 65px;
+		height: 65px;
+		border-radius: 16px;
+		transform: rotate(-30deg);
+		bottom: -31px;
+		left: -31px;
+		z-index: 2;
 	}
 	.statistics-experts__decor2 {
 	}
