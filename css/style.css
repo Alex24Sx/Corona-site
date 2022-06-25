@@ -494,6 +494,22 @@ align-items: center;
 	.experts__statistics {
 		
 	}
+	.experts__block-text{
+		max-width: 400px;
+	}
+	.experts__video{
+
+	}
+	/*Заабсолютить видео*/
+	.experts__video iframe{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+	/*Заабсолютить видео*/
 	.statistics-experts {
 		max-width: 655px;
 		margin: 0px auto;
