@@ -645,5 +645,45 @@ align-items: center;
 }
 .healthcare__block-text {
 }
+.healthcare__items {
+	display: flex;
+	max-width: 980px;
+	margin: 0 -36px;
+	/*gap: 72px;*/
+}
+.healthcare__column{
+	flex: 0 1 33.333%;
+	padding: 0 36px;
+}
+.healthcare__item {
+	
 
+}
+.item-healthcare {
+	background: #FFFFFF;
+	box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 35px 17px;
+}
+.item-healthcare_icon {
+	margin: 0px 0px 58px 0px;
+}
+.item-healthcare_title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 138.5%;
+	letter-spacing: 0.08em;
+	color: #000000;
+}
+.item-healthcare_text {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 138.5%;
+	letter-spacing: 0.08em;
+	color: #616161;
+}
 /*4 Page*/
