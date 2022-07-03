@@ -660,6 +660,7 @@ align-items: center;
 
 }
 .item-healthcare {
+	height: 100%;
 	position: relative;
 	z-index: 2;
 	background: #FFFFFF;
@@ -732,3 +733,47 @@ align-items: center;
 	border-radius: 16px;
 }
 /*4 Page*/
+/*--Adaptiv---*/
+@media (max-width: 1087px) {
+	.healthcare__column{
+		padding: 0 15px;
+	}
+}
+@media (max-width: 991.98px) {
+	.healthcare {
+		padding: 30px 0px 30px 0px;
+	}
+	.healthcare__items{
+		flex-direction: column;
+	}
+	.healthcare__column:not(:last-child){
+		padding: 0px 0px 25px 0px;
+	}
+}
+/*--Adaptiv---*/
+/*-------Footer------------------------------*/
+.footer {
+	padding: 45px 0;
+}
+.footer__container {
+	
+}
+.footer__items {
+	display: flex;
+	column-gap: 50px;
+	row-gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+.footer__item {
+}
+/*--Adaptiv---*/
+@media (max-width: 500px) {
+	.footer {
+		padding: 30px 0;
+	}
+	.footer__items {
+		flex-direction: column;
+	}
+}
+/*--Adaptiv---*/
